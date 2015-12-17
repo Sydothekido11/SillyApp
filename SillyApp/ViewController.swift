@@ -38,6 +38,26 @@ class ViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func redSlider
+        (sender: UISlider)
+    {
+        let newRed = CGFloat(Double(sender.value))
+        
+        view.backgroundColor = UIColor(red: newRed, green: CGFloat(0.134), blue: CGFloat(0.745), alpha: 1.0)
+    }
+    
+    
+    @IBAction func hasBlue
+        (sender: UISwitch)
+    {
+        if(sender.on)
+        {
+            view.backgroundColor = UIColor(red: CGFloat(0.134), green: CGFloat(0.134), blue: CGFloat(0.745), alpha: 1.0)
+        }
+        else
+        {
+            view.backgroundColor = UIColor(red: CGFloat(0.001), green: CGFloat(0.134), blue: CGFloat(0.745), alpha: 1.0)        }
+        }
 
 }
 
